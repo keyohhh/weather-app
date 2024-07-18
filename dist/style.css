@@ -1,0 +1,135 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #343d4b;
+}
+
+.location {
+    display: flex; /*to work on main site*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: auto auto;
+    height: 100%;
+}
+
+.location.inactive {
+    display: none;
+}
+
+.desired-location {
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    width: 500px;
+    text-align: center;
+}
+
+.submit-location {
+    background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+    border-radius: 25px;
+    padding: 8px;
+    width: 200px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9em;
+    border: none;
+    box-shadow: -5px -5px linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+}
+
+.weather-container {
+    width: 575px;
+    height: 450px;
+    margin: 60px auto;
+    border-radius: 25px;
+    display: flex;
+    
+}
+
+.today-weather {
+    background-image: url(../imgs/backsplash.avif);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    color: white;
+    text-align: left;
+    border-radius: 25px 0 0 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.todays-info {
+    border-radius: 25px 0 0 25px;
+    background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2em;
+    padding: 25px;
+    
+}
+
+.date-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.today-weather:hover {
+    transform: scale(1.035);
+    
+}
+
+.curr-temp {
+    font-size: 2em;
+}
+
+.temp {
+    background-color: #222831;
+    width: 50%;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    padding: 20px;
+    margin: auto auto;
+    color: white;
+    background-color: #222831;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+a:visited {
+    color: white;
+}
+
+.twitter-link, .github-link {
+    margin-right: 15px;
+}
+
+a > img {
+    width: 25px;
+    height: 25px;
+}
+
+.links {
+    display: flex;
+}

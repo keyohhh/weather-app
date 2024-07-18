@@ -5,9 +5,41 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
 <body>
-    
+    <div class="location active">
+        <input type="text" class="desired-location" placeholder="Enter your city...">
+        <button class="submit-location" type="submit">Go to weather</button>
+    </div>
+    <div class="weather-container">
+        <div class="today-weather">
+            <div class="todays-info">
+                <div class="date-info">
+                    <h1 class="weekday"></h1>
+                    <h3 class="date"></h3>
+                    <h3 class="curr-location"></h3>
+                </div>
+                <div class="curr-temp">
+                    <h1>83&degF</h1>
+                    <h3>Sunny</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="temp">
+            
+        </div>
+    </div>
+    <footer>
+        <div class="foot-container">
+            <p class="created-by">Created by: Mike Keough</p>
+            <span class="divider">|</span>
+            <div class="links">
+                <a href="https://github.com/keyohhh" target="_blank"><img src="../imgs/github-mark-white.svg" alt="Github link" class="github-link"></a>
+                <a href="https://x.com/constKeough" target="_blank"><img src="../imgs/logo-white.png" alt="twitter icon link" class="twitter-link"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
